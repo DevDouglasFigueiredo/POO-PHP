@@ -1,5 +1,6 @@
 <?php
 
+namespace alura\banco\modelo;
 
 
 class Endereco

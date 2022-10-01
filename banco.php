@@ -1,9 +1,13 @@
 <?php
 
-require_once 'src/Conta.php';
-require_once 'src/Endereco.php';
-require_once 'src/Titular.php';
-require_once 'src/Cpf.php';
+
+use alura\banco\modelo\conta\Titular;
+use alura\banco\modelo\Endereco;
+use alura\banco\modelo\CPF;
+use alura\banco\modelo\conta\Conta;
+
+
+require_once 'autoload.php';
 
 $endereco = new Endereco('palhoca', 'bela vista', 'minha rua', '2494');
 $joaoCarlos = new Titular(new Cpf('065.598.654-55'), 'Joao Carlos', $endereco);
